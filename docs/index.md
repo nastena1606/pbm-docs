@@ -9,6 +9,8 @@ With Percona Backup for MongoDB you can  design and implement the effective back
 
     This is the documentation for the latest release, **PBM {{release}}** ([Release Notes](release-notes/{{release}}.md)).
 
+![type:video](https://www.screencast.com/users/catalina.adam/folders/Camtasia%20Studio/media/214d921f-b3ee-40f4-8ab0-51ad9053e9fb/embed)
+
 ## Why Percona Backup for MongoDB?
 
 * Enterprise-grade features for free: 
