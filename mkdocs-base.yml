@@ -76,7 +76,7 @@ markdown_extensions:
        
 
 plugins:
-  section-index: {}
+#  section-index: {}
   search: 
     separator: '[\s\-,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
   git-revision-date-localized: 
@@ -116,46 +116,47 @@ extra:
 
 
 nav:
-  - Home:
-      - index.md
-  - About PBM:    
-      - How PBM works:
-          - intro.md
-      - "Components": "pbm-components.md"
+  - About PBM:
+      - Introduction: index.md
+      - How PBM works: intro.md
       - versions.md
       - deployments.md
+      - Architecture: 
+          - details/architecture.md
+          - details/pbm-agent.md
+          - PBM CLI: details/cli.md
+          - PBM control collections: details/control-collections.md
+          - Remote backup storage:
+             - Overview:
+                - details/storage-configuration.md
+             - details/storage-config-example.md
+      - details/authentication.md
+  - Features and benefits:
+      - Backup and restore types:
+        - Overview: details/backup-types.md
+        - Physical backups: details/physical.md
+        - usage/incremental-backup.md
+        - Logical backups: details/logical.md
+        - Selective backups: usage/selective-backup.md
+        - usage/point-in-time-recovery.md
+      - comparison.md
+      
   - Get started:
       - Install:
           - installation.md
       - Set up and configure:
           - initial-setup.md
-  - Backup and restore types:
-    - Overview: details/backup-types.md
-    - Physical backups: details/physical.md
-    - usage/incremental-backup.md
-    - Logical backups: details/logical.md
-    - Selective backups: usage/selective-backup.md
-    - usage/point-in-time-recovery.md
-  - Run PBM: 
-      - "Start a backup" : "usage/start-backup.md"
-      - usage/list-backup.md
+      - "Make a backup" : "usage/start-backup.md"
       - usage/restore.md
+  - Manage backups: 
+      - Schedule backups: manage/schedule-backup.md
+      - usage/list-backup.md
       - usage/restore-progress.md
       - usage/cancel-backup.md
       - usage/delete-backup.md
       - usage/logs.md     
       - usage/oplog-replay.md
-  - Details:
-      - Architecture:
-          - details/architecture.md
-      - details/authentication.md
-      - Remote backup storage:
-          - Overview:
-              - details/storage-configuration.md
-          - details/storage-config-example.md
   - Manage PBM:
-      - Schedule backups: 
-          - manage/schedule-backup.md
       - 'Configure PBM remotely': 'manage/configure-remotely.md'
       - 'Upgrade PBM': 'manage/upgrading.md'
       - 'Troubleshoot PBM': 'manage/troubleshooting.md'
@@ -201,8 +202,6 @@ nav:
       - 'Percona Backup for MongoDB 1.0.0 (2019-09-19)': 'release-notes/1.0.0.md'
       - 'Percona Backup for MongoDB 0.5.0 (2019-06-17)': 'release-notes/0.5.0.md'
   - reference/contributing.md
-  - Copyright and Licensing:
-      - copyright.md
-  - Trademark policy:
-      - trademark-policy.md 
+  - copyright.md
+  - trademark-policy.md 
 
