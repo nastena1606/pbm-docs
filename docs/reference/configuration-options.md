@@ -99,7 +99,7 @@ The key to sign your programmatic requests to the storage bucket. This option ca
 
 The size of data chunks in bytes to be uploaded to the storage bucket. Default: 10MB
 
-Percona Backup for MongoDB automatically increases the `uploadPartSize` value if the size of the file to be uploaded exceeds the max allowed file size. (The max allowed file size is calculated with the default values of `uploadPartSize` \* [`maxUploadParts`](https://docs.aws.amazon.com/sdk-for-go/api/service/s3/s3manager/#pkg-constants) and is appr. 97,6 GB).
+Percona Backup for MongoDB automatically increases the `uploadPartSize` value if the size of the file to be uploaded exceeds the max allowed file size. (The max allowed file size is calculated with the default values of `uploadPartSize` \* [`maxUploadParts`](https://docs.aws.amazon.com/sdk-for-go/api/service/s3/s3manager/#pkg-constants) and is approximately 97,6 GB).
 
 The `uploadPartSize` value is printed in the `pbm-agent` log.
 

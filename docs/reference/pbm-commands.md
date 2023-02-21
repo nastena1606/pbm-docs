@@ -24,8 +24,8 @@ The command accepts the following flags:
 | ------------------ | ------------------------------------- | 
 | `--force-resync`   | Resync backup list with the current storage|            
 | `--list`           | List current settings                  |
-| `--file=FILE`      | Upload the config information from a YAML file   |
-| `--set=SET`        | Set a new config option value. Specify the option in the `<key.name=value>` format.                                    |
+| `--file=FILE`      | Upload the configuration information from a YAML file   |
+| `--set=SET`        | Set a new configuration option value. Specify the option in the `<key.name=value>` format.                                    |
 | `-o`, `--out=text` | Shows the output format as either plain text or a JSON object. Supported values: text, json                      |
 
 ??? "PBM configuration output"
@@ -56,7 +56,7 @@ The command accepts the following flags:
     }
     ```
 
-??? "Setting a config value"   
+??? "Setting a configuration value"   
 
     ```json
     [
@@ -242,7 +242,7 @@ The command accepts the following flags:
 | Flag                | Description                      |
 | ------------------- | -------------------------------- |
 | `--restore`         | Shows last N restores. Starting with version 2.0, the output shows restore names instead of backup names, as multiple restores can be done from a single backup.           |
-| `--size=0`          | Shows last N backups.  It also provides the information whether the restore is a selective one.         |
+| `--size=0`          | Shows last N backups. It also provides the information whether the restore is a selective one.         |
 | `-o`, `--out=text`  | Shows the output format as either plain text or a JSON object. Supported values: `text`, `json`                 |
 | `--unbacked`        | Shows Point-in-Time Recovery oplog slices that were saved without the base backup snapshot. Available starting with version 1.8.0.|
 | `--replset-remapping` | Maps the replica set names for the data restore / oplog replay. The value format is `to_name_1=from_name_1,to_name_2=from_name_2`|
@@ -446,7 +446,7 @@ The command accepts the following flags:
 
 ## pbm delete-pitr
 
-Deletes oplog slices produced for Point-in-Time Recovery.
+Deletes oplog slices produced for point-in-time recovery.
 
 The command has the following syntax:
 
